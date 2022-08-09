@@ -1,0 +1,66 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;700&display=swap');
+
+/* COLOR VARIABLES */
+:root
+{
+    --mainColor: #34495e;
+    --mainColor-300: #2980b9;
+}
+
+.bg-main{background-color: var(--mainColor);}
+.bg-main300{background-color: var(--mainColor-300);}
+.bg-white{background-color: white;}
+.color-white{color: white}
+
+/* UNIVERSAL SELECTOR */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all .5s ease;
+}
+
+
+body{
+    background-color: var(--mainColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-body{
+    position: relative;
+}
+
+.start-quiz {
+    background-color: white;
+    width: 70%;
+    height: 300px;
+    margin: o;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.3em;
+    border-radius: 5px;
+}
+.start-quiz p {
+    margin: 20px 0px;
+}
+
+.start-quiz button{
+    background-color: var(--mainColor);
+    font-size: 1.1;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
