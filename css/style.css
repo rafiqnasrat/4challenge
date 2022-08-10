@@ -95,6 +95,31 @@ body{
     margin-bottom: 10px;
  }
 
- .card-body us{
+ .card-body ul{
     list-style: none;
+ }
+ .card-body ul li{
+    color: var(--mainColor);
+    padding: 5px 10px;
+ }
+ .card-body ul li span {
+    margin-bottom: 10px;
+    background-color: white;
+    color: var(--mainColor);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px 15px;
+    cursor: pointer;
+ }
+
+ .card-body .result{
+    position:absolute;
+    bottom: -10px;
+    right: o;
+    background-color: var(--mainColor-300);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    
  }

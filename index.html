@@ -4,42 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Quiz game</title>
+
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz Game</title>
 </head>
 <body>
-<main class="quiz-bidy">
-    <nav>
-        <ul>
-            <li id="show-score"> high scores</li>
-            <li id="time">time left: <strong>80</strong></li>
-        </ul>
-    </nav>
-<section class="start-quiz">
-    <h1>coding Quiz challenge</h1>
-    <p> try to answer the following code-related question within the time limit. keep in mind that incorrect answers will penalize your score-time by ten seconds</p>
-    <button id="start-btn">start quiz</button>
-</section>
-<section class="card bg-white">
-    <div class="card-body question">
-        <ul>
-            <li><span id="1">1.option</span></li>
-            <li><span id="2">2.option</span></li>
-            <li><span id="3">3.option</span></li>
-            <li><span id="4">4.option</span></li>
+   
+    <main class="quiz-body">
 
-        </ul>
-        <div class="result">
-            correct!
-        </div>
-    </div>
-</section>
-<section class=""></section>
-<section class=""></section>
+        <!-- NAVS -->
+        <nav>
+            <ul>
+                <li id="show-score">High Scores</li>
+                <li id="time">Time Left: <strong>80</strong></li>
+            </ul>
+        </nav>
 
+        <!-- START QUIZ SECTION -->
+        <section class="start-quiz">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
+            <button id="start-btn">Start Quiz</button>
+        </section>
+        
+        <!-- QUESTIONS SECTION -->
+        <section class="card bg-white">
+            <div class="card-body questions">
+                <h1>Questions are here</h1>
+                <ul>
+                    <li><span id="1">1. option 1</span></li>
+                    <li><span id="2">2. option 2</span></li>
+                    <li><span id="3">3. option 3</span></li>
+                    <li><span id="4">4. option 4</span></li>
+                </ul>
 
-</main>
+                <div class="result">
+                    Correct!
+                </div>
+            </div>
+        </section>
+
+        <!-- USER INITIAL SECTION -->
+        <section class="card bg-main">
+            <div class="card-body initials">
+                <h1>All Done!</h1>
+                <p>Your final score is: <strong>22</strong></p>
     
-    <script src="./js/java.js"></script>
+                <div>
+                    <label for="">Enter Initials</label>
+                    <input type="text" id="userName">
+                    <button id="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- HIGH SCORE SECTION -->
+        <section class="card bg-white">
+            <div class="card-body bg-main color-white high-score">
+                <h1>High Scores</h1>
+                <ul>
+      
+                </ul>
+                <button id="goBack">Go Back</button>
+                <button id="clearHighScore">Clear high scores</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
