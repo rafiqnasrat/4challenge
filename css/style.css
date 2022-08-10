@@ -23,8 +23,9 @@
     transition: all .5s ease;
 }
 
-
-body{
+/* BODY SECTION */
+body
+{
     background-color: var(--mainColor);
     height: 100vh;
     display: flex;
@@ -32,15 +33,46 @@ body{
     align-items: center;
 }
 
-.quiz-body{
+/* QUIZ BODY */
+.quiz-body
+{
     position: relative;
 }
 
-.start-quiz {
+/* NAV */
+nav 
+{
+    position: fixed;
+    color: white;
+    top: 10px;
+    left: 0;
+    z-index: 99;
+    font-size: 1.3em;
+    width: 100%;
+}
+nav ul
+{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav ul li
+{
+    padding: 5px 15px;
+    background-color: var(--mainColor-300);
+    cursor: pointer;
+}
+#time
+{
+    display: none;
+}
+/* START QUIZ SECTION */
+.start-quiz
+{
     background-color: white;
     width: 70%;
     height: 300px;
-    margin: o;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,13 +82,14 @@ body{
     font-size: 1.3em;
     border-radius: 5px;
 }
-.start-quiz p {
-    margin: 20px 0px;
+.start-quiz p
+{
+    margin: 20px 0;
 }
-
-.start-quiz button{
+.start-quiz button
+{
     background-color: var(--mainColor);
-    font-size: 1.1;
+    font-size: 1.1em;
     padding: 10px 20px;
     color: white;
     font-weight: 400;
@@ -64,45 +97,54 @@ body{
     border: none;
     cursor: pointer;
 }
- .start-quiz button:hover{
+.start-quiz button:hover
+{
     background-color: var(--mainColor-300);
- }
+}
 
- .card{
+
+
+/* CARD SECTION */
+.card
+{
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
-    width: 100vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
+    opacity: 0;
     pointer-events: none;
- }
-
- card-body{
+}
+.card-body
+{
     position: relative;
     padding: 20px;
     font-size: 1.3em;
     border-radius: 5px;
     width: 70%;
-
- }
-
- .card-body h1{
-    border-bottom: 0px solid white;
+}
+.card-body h1
+{
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
     margin-bottom: 10px;
- }
-
- .card-body ul{
+}
+.card-body ul
+{
     list-style: none;
- }
- .card-body ul li{
+}
+.card-body ul li
+{
+    /* background-color: white; */
     color: var(--mainColor);
     padding: 5px 10px;
- }
- .card-body ul li span {
+    /* margin-bottom: 10px; */
+}
+.card-body ul li span
+{
     margin-bottom: 10px;
     background-color: white;
     color: var(--mainColor);
@@ -110,16 +152,89 @@ body{
     padding: 5px 10px;
     border-radius: 5px 15px;
     cursor: pointer;
- }
+}
 
- .card-body .result{
-    position:absolute;
+.card-body .result
+{
+    position: absolute;
     bottom: -10px;
-    right: o;
+    right: 0;
     background-color: var(--mainColor-300);
     color: white;
     padding: 10px;
     border-radius: 10px;
     display: none;
-    
- }
+}
+
+.card-body button
+{
+    background-color: white;
+    color: var(--mainColor-300);
+    padding: 5px 10px;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card-body button:hover
+{
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.card-body input
+{
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid var(--mainColor);
+    outline: none;
+    font-size: 1.1em;
+}
+.card-body button
+{
+    background-color: var(--mainColor);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
+
+/* QUESTIONS */
+.questions
+{
+    background-color: var(--mainColor);
+    color: white;
+}
+.questions ul li span:hover
+{
+    background-color: var(--mainColor-300);
+    color: white;
+}
+
+/* INITIAL */
+.initials
+{
+    text-align: center;
+    background-color: white;
+}
+.initials button:hover
+{
+    background-color: var(--mainColor-300);
+}
+
+/* HIGH SCORE */
+.high-score ul li
+{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.high-score button
+{
+    background-color: var(--mainColor-300);
+}
+.high-score button:hover
+{
+    background-color: white;
+    color: var(--mainColor-300)
+}
