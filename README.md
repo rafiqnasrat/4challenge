@@ -1,4 +1,4 @@
-![this is my quiz screnshot] (file:///C:/Users/ADMIN/OneDrive/Pictures/Screenshots/Screenshot%20(3).png)
+![this is my quiz screnshot] (https://github.com/rafiqnasrat/4challenge/blob/main/this%20is%20quiz%20(2).png?raw=true)
 # 4challenge
 i add first my main with four section
 i give same class for this 
